@@ -738,10 +738,10 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 .main .motto{
     min-height: 140px;
 }
-.main .motto b{
+.main .motto span{
     font-family: 'Grand Hotel',cursive;
     min-height: 140px;
-    font-size: 45px;
+    font-size: 50px;
 }
 .main .motto, .main .subscribe .info-text{
     font-size: 28px;
