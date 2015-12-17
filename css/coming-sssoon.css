@@ -726,11 +726,21 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
     margin-top: 150px;
     z-index: 3;
 }
+
 .main .logo.cursive{
     font-family: 'Raleway',sans-serif;
-    font-size: 82px;
+    font-size: 90px;
     
 }
+
+@media (max-width:600px){
+  .main .logo.cursive{
+      font-family: 'Raleway',sans-serif;
+      font-size: 60px;
+      
+  }
+}
+
 .main .content{
     position: relative;
     z-index: 4;
