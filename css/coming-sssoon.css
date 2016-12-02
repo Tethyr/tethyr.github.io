@@ -730,7 +730,10 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 .main .logo.cursive{
     font-family: 'Raleway',sans-serif;
     font-size: 90px;
-    
+}
+
+.main .logo.image img{
+  width: 6.5em;
 }
 
 @media (max-width:600px){
