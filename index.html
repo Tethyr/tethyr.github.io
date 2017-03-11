@@ -1,111 +1,426 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Tethyr | Social Recommendations</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta content="A fully responsive landing page template" name="description" />
+    <meta content="Tethyr" name="app name" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-    <meta name="viewport" content="width=device-width" />
+    <link rel="shortcut icon" href="images/favicon.ico">
 
-    <title>Tethyr</title>
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
 
-    <link href="css/bootstrap.css" rel="stylesheet" />
-    <link href="css/coming-sssoon.css" rel="stylesheet" />    
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!--     Fonts     -->
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
-    <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,700" rel="stylesheet" type="text/css">
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    <!-- Font Icons CSS -->
+    <link href="css/pe-icon-7-stroke.css" rel="stylesheet">
 
-      ga('create', 'UA-77112950-1', 'auto');
-      ga('send', 'pageview');
-    </script>
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Color style -->
+    <link href="css/colors/blue.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
   </head>
-  <body>
-    <nav class="navbar navbar-transparent navbar-fixed-top" role="navigation">  
-    <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li>
-          <a href="https://www.facebook.com/dialog/feed?app_id=1512119175749093&display=popup&caption=Connect with your Clients&link=https://tethyrapp.com&redirect_uri=https://tethyrapp.com"> 
-            <i class="fa fa-facebook-square"></i>
-            Share
-          </a>
-          </li>
-          <li>
-          <a href="https://twitter.com/tethyrapp"> 
-            <i class="fa fa-twitter"></i>
-            Tweet
-          </a>
-          </li>
-        </ul>
 
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container -->
-    </nav>
-    <div class="main" style="background-image: url('images/default.jpg')">
+  <body data-spy="scroll" data-target="#navbar-menu">
 
-      <!--    Change the image source '/images/default.jpg' with your favourite image.     -->
-
-      <div class="cover black" data-color="black"></div>
-
-      <!--   You can change the black color for the filter with those colors: blue, green, red, orange       -->
-
+    <!-- Navbar -->
+    <div class="navbar navbar-custom navbar-fixed-top sticky" role="navigation" id="sticky-nav">
       <div class="container">
-        <div class="logo image">
-          <img src="images/tethyr_logo.png">
-        </div>
-        <!--  H1 can have 2 designs: "logo" and "logo cursive"           -->
 
-        <div class="content">
-          <h4 class="motto">Find &#9679; Book &#9679; Pay</h4>
-          <div class="subscribe">
-            <h5 class="info-text">
-              Join the waiting list for the beta. We'll keep you posted. 
-            </h5>
-            <div class="row">
-              <div class="col-md-4 col-md-offset-4 col-sm6-6 col-sm-offset-3">
-                <form action="http://tethyrapp.us12.list-manage.com/subscribe/post?u=14ca195b8d794a746d0904451&amp;id=efde2cbc21" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form-inline" role="form" target="_blank" novalidate="">
-                  <div class="form-group">
-                    <label class="sr-only" for="exampleInputEmail2">Email address</label>
-                    <input type="email" class="form-control transparent" value="" name="EMAIL" id="mce-EMAIL" placeholder="Your email here..." required="">
-                  </div>
-                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_14ca195b8d794a746d0904451_efde2cbc21" tabindex="-1" value=""></div>
-                  <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-danger btn-fill">Notify Me</button>
-                </form>
-              </div>
+        <!-- Navbar-header -->
+        <div class="navbar-header">
+
+          <!-- Responsive menu button -->
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <!-- LOGO -->
+          <img src="images/tethyr-logo-mini.png" alt="img" class="logo">
+
+        </div>
+        <!-- end navbar-header -->
+
+        <!-- menu -->
+        <div class="navbar-collapse collapse" id="navbar-menu">
+
+          <!-- Navbar left -->
+          <ul class="nav navbar-nav nav-custom-left">
+            <li class="active">
+              <a href="#home" class="nav-link">Home</a>
+            </li>
+            <li>
+              <a href="#features" class="nav-link">Features</a>
+            </li>
+            <li>
+              <a href="#pricing" class="nav-link">Plans</a>
+            </li>
+          </ul>
+        </div>
+        <!--/Menu -->
+      </div>
+      <!-- end container -->
+    </div>
+    <!-- End navbar-custom -->
+
+
+
+    <!-- HOME -->
+    <section class="home" id="home">
+      <video class="bg-video" autoplay muted loop style="width:100%; height: auto; position:absolute; z-index: -1;">
+        <source src="images/banner_movie.webm" type="video/webm">
+        <img src="https://www.saastr.com/wp-content/uploads/2015/04/annual_2016_bg.jpg">
+      </video>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <div class="home-wrapper home-wrapper-alt">
+              <h1 class="text-white">Book More Appointments.</h1>
+              <h1 class="text-white">Save Time.</h1>
+              <h1 class="text-white">Grow Your Business.</h1>
+              <h4 class="text-light">Tethyr is changing the way people find and book with the companies and professionals they love. With our one-click Social Recommendations, automate word-of-mouth business by displaying as a recommended professional any time your customer's friends or family search for the services you provide.</h4>
+              <a href="" class="btn btn-custom">Get on the waiting list</a>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </body>
-  <script src="js/jquery-1.10.2.js" type="text/javascript"></script>
-  <script src="js/bootstrap.min.js" type="text/javascript"></script>
-  <div id="fb-root"></div>
-  <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=426595334103169";
-    fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+    </section>
+    <!-- END HOME -->
 
+
+
+    <!-- Features Alt -->
+    <section class="section">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="text-center">
+              <div class="title-box-icon">
+                <i class="pe-7s-medal"></i>
+                <h3 class="title">Built With Small Businesses In Mind</h3>
+              </div>
+            </div>
+          </div>
+        </div><!-- end row -->
+
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="feat-description">
+              <h4 class="text-muted">Small businesses live and die by word-of-mouth referrals. Tethyr automates the way companies control their word-of-mouth.</h4>
+              <p class="text-muted">Unfortunately, your client's aren't always talking about you. Social media post get buried quickly, reviews are impersonal and anonymized, and search engines favor the big companies. Tethyr changes that by capturing recommendations from your current clients, and displaying that recommendation to all their friends, any time their friends search Tethyr for your service.</p>
+
+              <a href="" class="btn btn-custom">Sign up for the beta</a>
+            </div>
+          </div>
+
+          <div class="col-sm-7">
+            <img src="images/macbook.png" alt="img" class="img-responsive">
+          </div>
+
+        </div><!-- end row -->
+
+      </div> <!-- end container -->
+    </section>
+    <!-- end features alt -->
+
+
+    <!-- Features -->
+    <section class="section bg-light" id="features">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <h3 class="title">Client-Side Booking, Automated Reminders, and More!</h3>
+            <p class="text-muted sub-title">
+            Running your business has never been easier. <br/> Spend less time managing your clients, and more time doing the things you love.
+            </p>
+          </div>
+        </div> <!-- end row -->
+
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="features-box">
+              <i class="pe-7s-date"></i>
+              <h4>Booking</h4>
+              <p class="text-muted">Your calendar jsut got smarter. Allow clients to see you availability and book from their phone.</p>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="features-box">
+              <i class="pe-7s-chat"></i>
+              <h4>Automated Reminders</h4>
+              <p class="text-muted">Spend hours each night confirming appointments. Let us do the heavy lifting. Send reminders 72 hours and 24 hours in advance.</p>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="features-box">
+              <i class="pe-7s-users"></i>
+              <h4>Customer Contacts</h4>
+              <p class="text-muted">Keep all your customers and their info in one place. Send messages, book new appointments, and see their service history.</p>
+            </div>
+          </div>
+
+        </div> <!-- end row -->
+
+
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="features-box">
+              <i class="pe-7s-speaker"></i>
+              <h4>Social Recommendation</h4>
+              <p class="text-muted">
+              Send out a simple request for a recommendation via text. Your clients can recommend with a single click, and you'll be instantly connected to all their frineds and family.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="features-box">
+              <i class="pe-7s-browser"></i>
+              <h4>Micro-Site</h4>
+              <p class="text-muted">
+              Get a unique URL that you can share on your social media channels to drive customers right to you. Display photos, services, pricing and avaialbilty. Its as easy to set up as a facebook page.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="features-box">
+              <i class="pe-7s-diamond"></i>
+              <h4>Premium Listing</h4>
+              <p class="text-muted">
+              Sign up to be a premium member and get in front of hundreds of potential customer's looking for the services you provide.
+              </p>
+            </div>
+          </div>
+
+        </div> <!-- end row -->
+
+      </div> <!-- end container -->
+    </section>
+    <!-- end Features -->
+
+
+
+    <!-- PRICING -->
+    <section class="section" id="pricing">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <h3 class="title">Choose your perfect plan</h3>
+            <p class="text-muted sub-title">
+              Find the plan that is right for you and your growing business.<br>
+              Choose from our Free, Basic or Premium Packages.
+            </p>
+          </div>
+        </div> <!-- end row -->
+
+
+        <div class="row">
+          <div class="col-lg-10 col-lg-offset-1">
+            <div class="row">
+
+              <!--Pricing Column-->
+              <article class="pricing-column col-md-4">
+                <div class="inner-box">
+                  <div class="plan-header text-center">
+                    <h3 class="plan-title">Free</h3>
+                    <h2 class="plan-price">$0</h2>
+                    <div class="plan-duration">Per Month</div>
+                  </div>
+                  <ul class="plan-stats list-unstyled">
+                    <li> <i class="pe-7s-speaker"></i>Social Recommendation</li>
+                    <li> <i class="pe-7s-users"></i>Customer Contacts</li>
+                    <li> <i class="pe-7s-date"></i>Basic Calendar</li>
+                    <li> <i class="pe-7s-browser"></i>Micro-site</li>
+                  </ul>
+
+                  <div class="text-center">
+                    <a href="#" class="btn btn-sm btn-custom">Signup Now</a>
+                  </div>
+                </div>
+              </article>
+
+
+              <!--Pricing Column-->
+              <article class="pricing-column col-md-4">
+                <div class="inner-box active">
+                  <div class="plan-header text-center">
+                    <h3 class="plan-title">Basic</h3>
+                    <h2 class="plan-price">$15</h2>
+                    <div class="plan-duration">Per Month</div>
+                  </div>
+                  <ul class="plan-stats list-unstyled">
+                    <li> <i class="pe-7s-left-arrow"></i>Everything in FREE</li>
+                    <li> <i class="pe-7s-date"></i>Client-Side Booking</li>
+                    <li> <i class="pe-7s-chat"></i>Automated Reminders</li>
+                    <li> <i class="pe-7s-check"></i>Confirmation Notices</li>
+                  </ul>
+
+                  <div class="text-center">
+                    <a href="#" class="btn btn-sm btn-custom">Signup Now</a>
+                  </div>
+                </div>
+              </article>
+
+
+              <!--Pricing Column-->
+              <article class="pricing-column col-md-4">
+                <div class="inner-box">
+                  <div class="plan-header text-center">
+                    <h3 class="plan-title">Premium</h3>
+                    <h2 class="plan-price">$50</h2>
+                    <div class="plan-duration">Per Month</div>
+                  </div>
+                  <ul class="plan-stats list-unstyled">
+                    <li> <i class="pe-7s-left-arrow"></i>Everything in BASIC</li>
+                    <li> <i class="pe-7s-diamond"></i>Premium Listings</li>
+                    <li> <i class="pe-7s-camera"></i>Additional Photos</li>
+                    <li> <i class="pe-7s-map-2"></i>Larger Geographic Area</li>
+                  </ul>
+
+                  <div class="text-center">
+                    <a href="#" class="btn btn-sm btn-custom">Signup Now</a>
+                  </div>
+                </div>
+              </article>
+
+            </div>
+          </div><!-- end col -->
+        </div>
+        <!-- end row -->
+
+      </div> <!-- end container -->
+    </section>
+    <!-- End Pricing -->
+
+    <!-- Subscribe -->
+    <section class="section bg-custom">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <h3 class="title text-white">Join The Waiting List</h3>
+            <p class="text-light sub-title">
+            We're rolling out our product slowly, to make sure we get it just right.<br>
+            Sign up now to get early access to Tethyr.
+            </p>
+          </div>
+        </div><!-- End row -->
+
+        <div class="row">
+          <div class="col-sm-6 col-sm-offset-3">
+            <form class="text-center" action="https://tethyrapp.us12.list-manage.com/subscribe/post"
+                                      id="subscribe-form" method="POST">
+              <input type="hidden" name="u" value="14ca195b8d794a746d0904451">
+              <input type="hidden" name="id" value="efde2cbc21">
+              <div class="form-group m-b-0">
+                <input type="input" class="form-control input-subscribe" id="mce-NAME" name="MERGE1" placeholder="Name" required>
+                <label for="mce-NAME"></label>
+
+                <input type="phone" class="form-control input-subscribe" id="mce-PHONE" name="MERGE3" placeholder="Phone" required>
+                <label for="mce-PHONE"></label>
+
+                <input type="email" class="form-control input-subscribe" id="mce-EMAIL" name="MERGE0" placeholder="Email" required>
+                <label for="mce-EMAIL"></label>
+              </div>
+
+              <input type="submit" class="btn btn-white-fill" name="submit" value="Sign Up">
+            </form>
+          </div>
+        </div><!-- End row -->
+
+      </div> <!-- end container -->
+    </section>
+    <!-- End Subscribe -->
+
+
+
+    <!-- FOOTER -->
+    <footer class="section bg-gray footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 col-sm-6 pull-right">
+            <h5>Contact</h5>
+            <address>
+              Silicon Slopes, UT 84043<br>
+              E: <a href="mailto:#">support@tethyr.com</a>
+            </address>
+          </div>
+
+          <div class="col-md-2 col-sm-6 pull-right">
+            <h5>Social</h5>
+            <ul class="list-unstyled">
+              <li><a href="">Facebook</a></li>
+              <li><a href="">Twitter</a></li>
+              <li><a href="">Instagram</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-2 col-sm-6 pull-right">
+            <h5>Tethyr</h5>
+            <ul class="list-unstyled">
+              <li><a href="">Home</a></li>
+              <li><a href="">Features</a></li>
+              <li><a href="">Plans</a></li>
+            </ul>
+          </div>
+
+        </div> <!-- end row -->
+
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="footer-alt text-center">
+              <p class="text-muted m-b-0">2017 © Tethyr</p>
+            </div>
+          </div>
+        </div> <!-- end row -->
+
+      </div> <!-- end container -->
+    </footer>
+    <!-- END FOOTER -->
+
+
+    <!-- Back to top -->    
+    <a href="#" class="back-to-top" id="back-to-top"> <i class="pe-7s-angle-up"> </i> </a>
+
+
+    <!-- js placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Jquery easing -->                                                      
+    <script type="text/javascript" src="js/jquery.easing.1.3.min.js"></script>
+
+    <!--sticky header-->
+    <script type="text/javascript" src="js/jquery.sticky.js"></script>
+
+    <!-- mailchimp - ajax form -->
+    <script type="text/javascript" src="js/jquery.ajaxchimp.js"></script>
+
+    <!--common script for all pages-->
+    <script src="js/jquery.app.js"></script>
+
+  </body>
 </html>
