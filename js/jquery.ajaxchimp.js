@@ -23,6 +23,7 @@
  =====
  To get the mailchimp JSONP url (undocumented), change 'post?' to 'post-json?' and add '&c=?' to the end.
  For e.g. 'http://blahblah.us1.list-manage.com/subscribe/post-json?u=5afsdhfuhdsiufdba6f8802&id=4djhfdsh99f&c=?',
+ https://tethyrapp.us12.list-manage.com/subscribe/post-json?u=14ca195b8d794a746d0904451&id=efde2cbc21&c=?
  */
 
 (function ($) {
