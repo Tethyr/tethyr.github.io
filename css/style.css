@@ -150,9 +150,9 @@ video.bg-video {
   min-width:100%;
   background-size: cover;
   transition: 1s opacity;
-  opacity: 0.5;
+  opacity: 0.4;
   position: absolute;
-  top: -100px;
+  top: -190px;
   left: 0;
 }
 
