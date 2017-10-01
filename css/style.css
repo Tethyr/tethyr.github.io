@@ -153,7 +153,7 @@ video.bg-video {
   width: auto;
   height: auto;
   z-index: -100;
-  transform: translateX(-40%) translateY(-17%)
+  transform: translateX(-50%)
 }
 
 .bg-img-1 {
